@@ -71,11 +71,11 @@ body {
 }
 
 .navbar-logo {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -603,8 +603,8 @@ body {
     }
     
     .navbar-logo {
-        width: 30px;
-        height: 30px;
+        width: 38px;
+        height: 38px;
     }
     
     .brand-text {
@@ -652,8 +652,8 @@ body {
     }
     
     .navbar-logo {
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
     }
     
     .brand-text {
