@@ -10,53 +10,107 @@
 </head>
 <body>
     
-    <!-- Header with Logo -->
-    <header class="main-header">
+    <!-- Hero Section with Background -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+        
+        <!-- Navigation Header -->
+        <nav class="navbar-custom">
+            <div class="container">
+                <div class="navbar-brand">
+                    <img src="./img/logo.jpg" alt="Sweet Dreams Bakery Logo" class="navbar-logo">
+                    <span class="brand-text">Sweet Dreams Bakery</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container hero-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-main">
+                        <div class="hero-text text-center">
+                            <h1 class="hero-title">
+                                <span class="title-line">Sweet Dreams</span>
+                                <span class="title-line">Bakery</span>
+                            </h1>
+                            <p class="hero-subtitle">Delicious Pastries & Sweet Treats</p>
+                            <p class="hero-description">
+                                Welcome to our premium e-commerce system for managing pastry orders. 
+                                Create, track, and deliver sweet experiences to your customers.
+                            </p>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <a href="operation.html" class="btn-hero btn-hero-primary">
+                                <i class="fas fa-rocket me-2"></i>
+                                <span>Get Started</span>
+                            </a>
+                            <a href="documentation.html" class="btn-hero btn-hero-secondary">
+                                <i class="fas fa-book me-2"></i>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-icon icon-1"><i class="fas fa-cookie-bite"></i></div>
+            <div class="floating-icon icon-2"><i class="fas fa-birthday-cake"></i></div>
+            <div class="floating-icon icon-3"><i class="fas fa-ice-cream"></i></div>
+            <div class="floating-icon icon-4"><i class="fas fa-candy-cane"></i></div>
+            <div class="floating-icon icon-5"><i class="fas fa-cupcake"></i></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3">
-                    <div class="logo-container">
-                        <img src="./img/logo.jpg" alt="Sweet Dreams Bakery Logo" class="header-logo">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Why Choose Our System?</h2>
+                    <p class="section-subtitle">Powerful features for your pastry business</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>Easy Order Management</h4>
+                        <p>Create and manage customer orders with our intuitive interface</p>
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="header-content text-end">
-                        <h1 class="header-title">Sweet Dreams Bakery</h1>
-                        <p class="header-subtitle">Delicious Pastries & Sweet Treats</p>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Automatic VAT Calculation</h4>
+                        <p>21% VAT automatically calculated on all orders</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Order Tracking</h4>
+                        <p>View all orders and search for specific orders easily</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-6">
-                <div class="welcome-card">
-                    <div class="welcome-content text-center">
-                        <div class="welcome-icon mb-4">
-                            <i class="fas fa-birthday-cake"></i>
-                        </div>
-                        <h2 class="welcome-title mb-4">Welcome to Our E-commerce System</h2>
-                        <p class="welcome-description mb-5">
-                            Manage your pastry orders efficiently with our comprehensive order management system. 
-                            Create, view, and track customer orders with ease.
-                        </p>
-
-                        <div class="action-buttons">
-                            <a href="documentation.html" class="btn btn-primary btn-lg me-3 mb-3">
-                                <i class="fas fa-book me-2"></i>Application Documentation
-                            </a>
-                            <a href="operation.html" class="btn btn-outline-primary btn-lg mb-3">
-                                <i class="fas fa-cogs me-2"></i>Operations Menu
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
 </body>
 </html>
