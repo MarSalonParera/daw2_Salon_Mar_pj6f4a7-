@@ -67,27 +67,20 @@ body {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    margin-left: -0.5rem;
+    margin-left: -2rem;
 }
 
 .navbar-logo {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .navbar-logo:hover {
     transform: scale(1.1) rotate(5deg);
-}
-
-.brand-text {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Hero Content */
@@ -603,12 +596,12 @@ body {
     }
     
     .navbar-logo {
-        width: 38px;
-        height: 38px;
+        width: 0.1px;
+        height: 0.1px;
     }
     
     .brand-text {
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
     
     .section-title {
@@ -652,12 +645,12 @@ body {
     }
     
     .navbar-logo {
-        width: 32px;
-        height: 32px;
+        width: 0.1px;
+        height: 0.1px;
     }
     
     .brand-text {
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
     
     .features-section {
