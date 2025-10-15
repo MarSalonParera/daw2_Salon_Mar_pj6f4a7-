@@ -161,4 +161,39 @@ document.addEventListener('DOMContentLoaded', function() {
             this.value = 'ORD-' + timestamp;
         }
     });
+
+    function sendData(){				
+    // Creation of objects associated with interface elements
+    const values = new FormData(document.getElementById("FormCalc")); //Get form values into the values variable
+    const result = document.getElementById("result");
+                    
+    // Request construction
+    const ip = "192.168.1.34"; //server IP address
+    const folder = "sm6ex5"; //folder where the PHP file is located
+    const phpFile = "sm6ex5.php"; //PHP file name
+    const request = "http://" + ip + "/" + folder + "/" + phpFile;
+    //const request = phpFile;
+    
+    // Send the request, wait for response and collect the response without reloading the page
+    fetch(request, {
+            method: 'POST',
+            body: values
+    }) // Send the request using POST method
+    .then(response => response.json()) // Collect the response in JSON format
+    .then(resultData => { //When all the sent response is collected, it's stored in 'resultData' and the code inside brackets is executed
+        result.textContent = "The result is " + resultData.sum; //sum has the same name as the key name in line 11 of sm6ex5.php						
+    })
+    .catch(errors => { //Error handling						
+        result.textContent = "Error calculating the sum";
+    });
+}
+
+function clearData(){				
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
+}
+
+function clearResult(){				
+    document.getElementById("result").textContent = "";
+}
 });
