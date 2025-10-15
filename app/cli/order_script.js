@@ -168,10 +168,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const result = document.getElementById("result");
                     
     // Request construction
-    const ip = "192.168.1.34"; //server IP address
+    const ip = "inf1-masapa"; //server IP address
     const folder = "sm6ex5"; //folder where the PHP file is located
     const phpFile = "sm6ex5.php"; //PHP file name
-    const request = "http://" + ip + "/" + folder + "/" + phpFile;
+    const request = "https://" + ip + "/" + folder + "/" + phpFile;
     //const request = phpFile;
     
     // Send the request, wait for response and collect the response without reloading the page
